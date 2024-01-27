@@ -1,0 +1,632 @@
+/* ### GLOBAL CONFIG ### */
+/* ### GLOBAL CONFIG ### */
+
+:root {
+    --color-gold: #caa858;
+    --dark-grey: #231f20;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ## HEADER ## */
+/* ## HEADER ## */
+/* ## HEADER ## */
+/* ## HEADER ## */
+/* ## HEADER ## */
+
+header {
+    border-bottom: 1px solid var(--color-gold);
+    background: linear-gradient(var(--dark-grey) 90%, var(--color-gold) 100%);
+}
+
+.backgroundHeader {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 0;
+    margin: auto;
+    width: 70rem;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.image {
+    cursor: pointer;
+    width: 150px;
+    height: 95px;
+    margin-right: 5rem;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+.image img {
+    width: 100%;    
+}
+
+.links .icons{  
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-gold);
+    margin-right: 10px;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.backgroundHeader .icons:hover{
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--color-gold);
+}
+
+.backgroundHeader .icons i{
+    margin-right: 5px;
+}
+
+.backgroundHeader button {
+    cursor: pointer;
+    align-self: center;
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+    padding: 5px 20px 5px 10px;
+    margin: 0 3rem;
+    color: var(--color-gold);
+    border-radius: 0.5rem 0.5rem 2rem 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.backgroundHeader button i{
+    font-size: 1.2rem;
+}
+
+.backgroundHeader button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+button:hover .fa-whatsapp{
+    color: green;
+    transform: scale(1.3);
+}
+
+.backgroundHeader button i{
+    margin-right: 0.5rem;
+}
+
+.iconsHeader {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 0.8rem;
+    font-size: 1.55rem;
+    align-self: center;
+    color: var(--color-gold);
+}
+
+.iconsHeader i {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.iconsHeader i:hover{
+    transform: scale(1.3)
+}
+
+.fa-instagram:hover {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: rgba(0, 0, 255, 0.9);
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+/* ### Main Advogado ### */
+/* ### Main Advogado ### */
+/* ### Main Advogado ### */
+/* ### Main Advogado ### */
+/* ### Main Advogado ### */
+
+.advogado {
+    border: 2px solid var(--color-gold);
+    background-color: rgba(202, 168, 88, 0.10);
+    padding: 0.5rem;
+    width: 75rem;
+    height: 400px;
+    display: flex;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px var(--color-gold);
+    transition: 0.1s ease;
+}
+
+.advImg {
+    width: 50%;
+    height: auto;
+    position: relative;
+    border-right: 6px solid var(--color-gold);
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.advImg img {
+    border-radius: 1rem 1rem 10rem 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 33%;
+    transition: 1s ease;
+}
+
+.showing {
+    opacity: 1;
+}
+
+.none{
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.advogadoText {
+    height: auto;
+    width: 45%;
+}
+
+.advogadoText h1{
+    margin: 0.5rem 0 1rem 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    line-height: 3rem;
+    text-align: center;
+    width: 90%;
+}
+
+.advogadoText p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+
+/* ### QUEM SOMOS ### */
+/* ### QUEM SOMOS ### */
+/* ### QUEM SOMOS ### */
+/* ### QUEM SOMOS ### */
+/* ### QUEM SOMOS ### */
+
+.whoWeAre {
+    background: linear-gradient(0deg, rgba(35,31,32,1) 0%, rgba(68,54,26,1) 50%, rgba(35,31,32,1) 100%);width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardsTitle h1 {
+    color: var(--color-gold);
+    padding: 1rem 0 0 0;
+    font-size: 2.2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 95rem;
+    height: 100%;
+}
+
+.whoWeAre .card1 {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid var(--color-gold);
+    box-shadow: 1px 1px 10px var(--color-gold);
+    width: 15%;
+    height: 70%;
+
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+/* ### Skill Card ### */
+/* ### Skill Card ### */
+/* ### Skill Card ### */
+/* ### Skill Card ### */
+/* ### Skill Card ### */
+
+.cardsSkills {
+    padding-left: 1.2rem;
+    width: 70rem;
+    margin: 1rem auto;
+    border: 1px solid var(--color-gold);
+    box-shadow: 1px 1px 20px var(--color-gold);
+    background-color: #231f2018;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.cardMainImg {
+    border: 2px solid var(--color-gold);
+    border-radius: 1rem 1rem 1rem 1rem;
+    height: auto;
+    margin-left: 0.5rem;
+    width: 18rem;
+    grid-row: 1 / 3;
+    grid-column: 4 / 5 ;
+}
+
+.jsFirstImgSkill {
+    opacity: 1;
+    transition: opacity 5s ease;
+}
+
+.jsSecondImgSkill {
+    opacity: 1;
+    transition: opacity 5s ease;
+}
+
+.cardsSecondImg {
+    border: 2px solid var(--color-gold);
+    border-radius: 1rem 1rem 1rem 1rem;
+    height: auto;
+    width: 18rem;
+    margin-left: -1.6rem;
+    margin-top: 0.5rem;
+    grid-row: 3 / 5;    
+    grid-column: 1 / 2 ;
+    width: 288px;
+    height: 520px;
+}
+
+.cardMainImg img{
+    border-radius: 1rem 1rem 1rem 10rem;
+    width: 100%;
+    height: 100%;
+}
+
+.cardsSecondImg img {
+    border-radius: 1rem 1rem 10rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.cardsInfo {
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(4, 260px);
+}
+
+/* ### Skill bellow the img recieves special width and animation # */
+/* ### Skill bellow the img recieves special width and animation # */
+/* ### Skill bellow the img recieves special width and animation # */
+
+.skillCard {
+    border-radius: 1rem;
+    border: 2px solid var(--color-gold);
+    margin: 0.5rem;
+    background-color: #caa8581a;
+    color: var(--dark-grey);
+    padding: 1rem;
+    height: 250px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.skillCard:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 20px var(--color-gold);
+}
+
+.henriqueSkill:hover, .larissaSkill:hover{
+    border: 2px solid var(--color-gold);
+    box-shadow: 1px 1px 20px var(--color-gold);
+}
+
+.anafSkill:hover, .gabrieleSkill:hover{
+    border: 2px solid white;
+    box-shadow: 1px 1px 20px white;
+}
+
+.skillCard i {
+    margin-right: 10px;
+}
+.skillCard h1 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.skillCard p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    color: var(--color-gold);
+}
+
+.quemsomos {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.cardAboutUs {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: auto;
+    width: 70rem;
+    height: 580px;
+    margin: auto;
+    margin-bottom: 0rem;
+}
+
+.cardAboutUsImg {
+    z-index: 1;
+    grid-row: 1 / 2;
+    grid-column: 1 / 13;
+    width: 55%;
+    height: auto;
+}
+
+.LarissaAboutUsImg,
+.GabrieleAboutUsImg{
+    grid-row: 1 / 2 !important;
+    grid-column: 14 / 20 !important;
+}
+
+.LarissaAboutUsImg img,
+.GabrieleAboutUsImg img{
+    width: 200% !important;
+}
+
+.LarissaAboutUsTxt,
+.GabrieleAboutUsTxt{
+    --border : 3px;
+    z-index: 1;
+    grid-row: 1 / 2 !important;
+    grid-column: 1 / 14 !important;
+    border-left: var(--border) solid var(--color-gold);
+    border-top: var(--border) solid var(--color-gold);
+    border-bottom: var(--border) solid var(--color-gold);
+    border-right: none !important;
+    border-radius: 2rem;
+}
+
+.cardAboutUsImg img {
+    width: 100%;
+    height: 550px;
+}
+
+.cardAboutUsTxt {
+    --border : 3px;
+    grid-row: 1 / 2;
+    grid-column: 7 /20;
+    background-color: #caa85827;
+    padding: 4rem 0 0rem 3.5rem;
+    width: 105%;
+    height: 550px;
+    border-right: var(--border) solid var(--color-gold);
+    border-top: var(--border) solid var(--color-gold);
+    border-bottom: var(--border) solid var(--color-gold);
+    border-radius: 2rem;
+}
+
+.cardAboutUsTxt h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.cardAboutUsTxt p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-right: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.cardAboutUsTxt p:nth-child(2){
+    color:var(--color-gold)
+}
+
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+/* ### Partners ### */
+
+/* ### Marcas  ### */
+/* ### Marcas  ### */
+/* ### Marcas  ### */
+/* ### Marcas  ### */
+/* ### Marcas  ### */
+
+.partnersContainer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(0deg, rgba(202,168,88,0.5) 0%, rgba(255,255,255,0) 100%);
+    padding-bottom: 11rem;
+}
+
+.partnersContainer h1 {
+    color: var(--color-gold);
+    margin: 1.5rem auto 2rem auto;
+    width: 30em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.partnersCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+    width: 70rem;
+}
+
+.partnersCard {
+    border-bottom: 5px solid var(var(--dark-grey));
+}
+
+/* ### Hover left bubble ### */
+/* ### Hover left bubble ### */
+/* ### Hover left bubble ### */
+/* ### Hover left bubble ### */
+/* ### Hover left bubble ### */
+/* ### Hover left bubble ### */
+
+.hoverCircle {
+    cursor: pointer;
+    position: fixed;
+    bottom: 150px;
+    padding-left: 1rem;
+    height: 0px;
+    transition: transform 0.3s ease;
+}
+
+.hoverCircle:hover{
+    transform: scale(1.1);
+}
+
+.hoverCircle .hoverImg {
+    border: 1px solid var(--color-gold);
+    background-color: var(--dark-grey);
+    border-radius: 1rem 0.5rem 3rem 0;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hoverCircle .hoverImg img{
+    border: 1px solid var(--color-gold);
+    background-color: white;
+    border-radius: 0 1rem 0 0;
+    width: 120px;
+    height: 120px;
+}
+
+.hoverImg p {
+    color: var(--color-gold);
+    line-height: 1rem;
+    margin-left: 0.5rem;
+    width: auto;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ### FOOTER ### */
+/* ### FOOTER ### */
+/* ### FOOTER ### */
+/* ### FOOTER ### */
+/* ### FOOTER ### */
+
+footer {
+    background-color: var(--dark-grey);
+    padding-bottom: 1.1rem;
+}
+
+.footerContainer {
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: space-around;
+    width: 70rem;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.footerContainer i {
+    padding-right: 0.3rem;
+}
+
+.logoSide {
+    color: var(--color-gold);
+    text-align: center;
+    width: 250px;
+    height: 150px;
+}
+
+.infoSide, .timeSide {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: white;
+    font-weight: 500;
+}
+
+.contactBook, .footerClock {
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+}
+
+.footerInfo, .footerTime {
+    border-left: 1px solid var(--color-gold);
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.locationSide {
+    margin: auto;
+    width: 70rem;
+    height: 320px;
+    text-align: end;
+}
+
+.diretos {
+    color: var(--color-gold);
+    border-top: 2px solid var(--color-gold);
+    text-align: center;
+    height: 10px;
+}
